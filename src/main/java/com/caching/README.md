@@ -1,4 +1,4 @@
-# Geocoding and Reverse Geocoding API using SpringBoot
+# Geocoding and Reverse Geocoding API using SpringBoot-CI/CD
 
 This repository contains a SpringBoot application that provides a REST API for forward and reverse geocoding. The API uses the Positionstack API for geocoding and reverse geocoding. The application also uses in-memory caching to store the geocoding and reverse geocoding results.
 
