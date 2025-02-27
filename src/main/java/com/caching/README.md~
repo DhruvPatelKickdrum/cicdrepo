@@ -1,0 +1,31 @@
+<<<<<<<<<<<<<<  ✨ Codeium Command ⭐ >>>>>>>>>>>>>>>>
+# Caching Project
+
+This project contains a simple caching implementation using Spring Boot and Caffeine.
+
+## Configuration
+
+The caching configuration is done in the `application.yml` file. The caching type is set to `caffeine` and the cache specification is set to `maximumSize=1000,expireAfterWrite=3600s`, which means that the cache will store a maximum of 1000 items and will expire items after 1 hour.
+
+## Caching
+
+The caching is done using the `@Cacheable` annotation. The annotation takes two parameters, the value and the key. The value is the name of the cache and the key is the key used to store and retrieve the value in the cache.
+
+The caching is done on the `@RestController` methods. The `@Cacheable` annotation is used to cache the response of the method. The method will be called only once and the response will be cached, so the next time the method is called, the cached response will be returned.
+
+The caching is also done on the `@Service` methods. The `@Cacheable` annotation is used to cache the response of the method. The method will be called only once and the response will be cached, so the next time the method is called, the cached response will be returned.
+
+## Cache Clearing
+
+The cache can be cleared using the `@CacheEvict` annotation. The annotation takes two parameters, the value and the key. The value is the name of the cache and the key is the key used to store and retrieve the value in the cache.
+
+The cache can also be cleared using the `CacheManager` interface. The `CacheManager` interface provides methods to clear the cache and to get the cache statistics.
+
+## Cache Statistics
+
+The cache statistics can be obtained using the `CacheManager` interface. The `CacheManager` interface provides methods to get the cache statistics, such as the number of cache hits and misses.
+
+## Conclusion
+
+This project provides a simple caching implementation using Spring Boot and Caffeine. The caching is done using the `@Cacheable` annotation and the cache can be cleared using the `@CacheEvict` annotation or the `CacheManager` interface. The cache statistics can be obtained using the `CacheManager` interface.
+<<<<<<<  f6fbbffd-9b06-40c4-a80f-8192db291744  >>>>>>>
