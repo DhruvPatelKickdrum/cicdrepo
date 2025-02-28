@@ -7,8 +7,8 @@ phases:
     commands:
       - echo "Building the project..."
       - mvn clean package
-      - cp target/*.jar application.jar
+      
 artifacts:
   files:
-    - application.jar
+    - target/*.jar
   
